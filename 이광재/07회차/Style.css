@@ -1,0 +1,17 @@
+.container {
+    height: 200px;
+    background-color: chocolate;
+    border: 3px solid blue;
+}
+.item:nth-child(1) {
+    width: 100px;
+    background-color: antiquewhite;
+}
+.item:nth-child(2) {
+    width: 600px;
+    background-color: aqua;
+}
+.item:nth-child(3) {
+    width: 200px;
+    background-color: blueviolet;
+}

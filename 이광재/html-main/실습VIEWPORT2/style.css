@@ -1,0 +1,126 @@
+body, ul, li, h3, p{
+	margin:0px;
+	padding:0;
+}
+
+a	{
+	text-decoration:none;
+	color: white;
+}
+
+li {
+	list-style-type:none;
+}
+
+img {
+	vertical-align:bottom;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+/*
+	1. header 로고영역을 만들어주세요.
+	배경색 c9e5ff
+	로고 너비값 280px / 높이값 50px
+*/
+/* ㅡㅡㅡ헤더ㅡㅡㅡ */
+.header_wrapper {
+	width: 100%;
+	height: 140px;
+	background-color: #c9e5ff;
+	position: relative;
+}
+.header_wrapper .header {
+	width: 1200px;
+	height: 140px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.header_wrapper .header .menu_wrapper {
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+	background-color: #505c66;
+}
+.header_wrapper .header .menu_wrapper li {
+	display: inline-block;
+	width: auto;
+	height: 100%;
+	/* padding: 0 15px; */
+	line-height: 50px;
+}
+.header_wrapper .header .menu_wrapper li a {
+	display: block;
+	padding: 0 15px;
+	width: 100%;
+	width: 100%;
+}
+.header_wrapper .header .menu_wrapper li:nth-child(1):hover {background-color: #404a52;}
+.header_wrapper .header .menu_wrapper li:nth-child(2):hover {background-color: #404a52;}
+.header_wrapper .header .menu_wrapper li:nth-child(3):hover {background-color: #404a52;}
+.header_wrapper .header .menu_wrapper li:nth-child(4):hover {background-color: #404a52;}
+.header_wrapper .header .menu_wrapper li:nth-child(5):hover {background-color: #404a52;}
+.header_wrapper .header .logo_wrapper {height: 90px;position: relative;}
+.header_wrapper .header .logo_wrapper .logo {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.header_wrapper .header .header_img {
+	position: absolute;
+	top: 0;
+	right: -50px;
+	z-index: 99999999;
+}
+/* ㅡㅡㅡ콘텐츠ㅡㅡㅡ */
+.contents_wrapper {
+	width: 100%;
+	height: 100%;
+	background-color: #64727f;
+}
+.contents_wrapper .contents {
+	width: 1200px;
+	height: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-color: #282e33;
+	/* display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: repeat(5, 1fr); */
+	display: flex;
+	/* align-items: flex-start; */
+	/* justify-content: space-between; */
+	flex-flow: wrap;
+	color: rgba(255, 255, 255, 0.5);
+}
+.contents_wrapper .contents li {
+	margin-left: 2%;
+	margin-top: 2%;
+	width: 18%;
+	height: auto;
+	background-color: #000;
+}
+.contents_wrapper .contents:nth-child(5) {margin-right: 2%;}
+.contents_wrapper .contents:nth-child(10) {margin-right: 2%;}
+.contents_wrapper .contents li h2 {
+	color: #77aaef;
+	margin: 20px;
+}
+.contents_wrapper .contents li p {
+	align-self: center;
+	text-align: center;
+}
+.contents_wrapper .contents li .movie_img {
+	width: 100%;
+} 
+.contents_wrapper .contents li .share_img {
+	margin: 30px;
+}

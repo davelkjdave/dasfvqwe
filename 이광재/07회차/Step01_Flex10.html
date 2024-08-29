@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step01_Flex10.html</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            border: 1px solid red;
+            height: 50px;
+            line-height: 50px;
+        }
+        .box {
+            height: 100%;
+            text-align: center;
+            color: #FFF;
+        }
+        .box1 {
+            background: red;
+            /* 
+                flex-grow: 1; flex-shirink: 1; flex-basis: 0;
+                요소가 가능한 모든 여유공간을 차지한다.
+            */
+            flex: 1;
+        }
+        .box2 {
+            background: lawngreen;
+            /* 
+                flex-grow: 0; flex-shirink: 0; flex-basis: auto;
+            */
+            width: 400px;
+            flex: none;
+        }
+        .box3 {
+            background: blueviolet;
+            /* 
+                flex-grow: 2; flex-shirink: 1; flex-basis: 0;
+                flex: 2 1 0;
+            */
+            flex: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+    </div>
+</body>
+</html>
